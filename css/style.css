@@ -1,0 +1,207 @@
+body {
+    font-family: "Lato", sans-serif;
+    background: #edeff0;
+    color: #576366;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #576366;
+}
+
+nav {
+    background: #3e474f;
+    color: #EFEFEF;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+nav figure {
+    text-align: center;
+}
+
+nav a, nav a:active, nav a:hover, nav a:visited  {
+    text-decoration: none;
+    color: #fff;
+} 
+
+.box {
+    -webkit-animation: panel-fade-up 0.4s ease;
+    animation: panel-fade-up 0.4s ease;
+    background: #fff;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.box h1 {
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.jumbo p {
+    font-size: 16px;
+}
+
+.fa {
+    margin: 0px 5px;
+}
+
+.card-title {
+    background-color: #3e474f;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+    height: 58px;
+    line-height: 58px;
+}
+
+span.tags {
+    display: inline-block;
+    border-radius: 100px;
+    background: transparent;
+    border: 2px solid rgba(48, 73, 97, 0.1);
+    font-weight: 500;
+    padding: 0 12px;
+    font-size: 13px;
+    line-height: 32px;
+    white-space: nowrap;
+    text-align: center;
+    -webkit-transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+    transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+span.tags:hover {
+    background-color: #3e474f;
+    color: #fff;
+}
+
+.project-tile {
+    margin-top: 20px;
+}
+
+.project-tile .additionInfo {
+    margin-top: 20px;
+    color: rgba(48, 73, 97, 0.7);
+    overflow: hidden;
+    display: none;
+}
+
+.project-tile:hover .additionInfo {
+    display: block;
+}
+
+.project-tile a,
+.project-tile a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-links {
+    padding: 0px;
+    list-style-type: none;
+    display: inline-flex;
+    font-size: 25px;
+    color: #fff;
+}
+
+.social-links li {
+    transition: margin-top 0.15s ease;
+}
+
+.social-links li:hover {
+    margin-top: -6px;
+}
+
+/* Display Photo - Hexagone (By http://codepen.io/darsain/) */
+
+.hexagon {
+    position: relative;
+    margin: 70px auto;
+    width: 190px;
+    height: 110px;
+    background-image: url('../assests/kalpesh_dp.jpg');
+    background-size: cover;
+    z-index: 1;
+    /* Text styling */
+    
+    line-height: 110px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #fff;
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    transition: color 500ms ease, text-shadow 500ms ease;
+}
+
+.hexagon:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+}
+
+.hexagon .face1,
+.hexagon .face2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: inherit;
+    z-index: -1;
+    /* Keeps borders smooth in webkit */
+    
+    backface-visibility: hidden;
+}
+
+.hexagon .face1:before,
+.hexagon .face2:before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: inherit;
+}
+
+.hexagon .face1 {
+    transform: rotate(60deg);
+}
+
+.hexagon .face1:before {
+    left: 0;
+    transform-origin: left top;
+    transform: rotate(-60deg) translate(-110px, 0);
+}
+
+.hexagon .face2 {
+    transform: rotate(-60deg);
+}
+
+.hexagon .face2:before {
+    right: 0;
+    transform-origin: right top;
+    transform: rotate(60deg) translate(110px, 0);
+}
+/* Custom classess */
+
+.PA0 {
+    padding: 0;
+}
+
+.MT20 {
+    margin-top: 20px;
+}
+
+.MT30 {
+    margin-top: 30px;
+}
